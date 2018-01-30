@@ -21,8 +21,8 @@ yarn init
 
 > **"(^._.^)ﾉ"** - *"Yarn is really fast MEOW"*
 
-[1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
-[2]: https://github.com/Atre/javascript-developer-starter/
-[3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/editorconfig
+[1]: https://github.com/atre/javascript-developer-starter/tree/project-setup/index
+[2]: https://github.com/atre/javascript-developer-starter/
+[3]: https://github.com/atre/javascript-developer-starter/tree/project-setup/editorconfig
 [4]: https://yarnpkg.com
 [5]: https://semver.org
