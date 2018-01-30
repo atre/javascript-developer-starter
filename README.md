@@ -13,4 +13,4 @@ application
 > **(=^ ◡ ^=)** - *"Stay in the flow MEOW"*
 
 [1]: https://github.com/melaniecebula/cat-ascii-faces
-[2]: https://github.com/atre/javascript-developer-starter/tree/project-settings/set-eslint-babel
+[2]: https://github.com/atre/javascript-developer-starter/tree/project-settings/babel-eslint
