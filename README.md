@@ -11,8 +11,9 @@ application
 - [0.1.3 - Webpack 4 beta][4] | Bundle ALL THE STUFF!
 - [0.1.4 - Babel 7 beta][5] | Use latest Javascript features now
 - [0.1.5 - ESlint][6] | Use popular code style guidelines
-- [0.1.6 - Project structure][7] | Create important files and folders
-- [> PART 2 - Project Settings][8]
+- [0.1.6 - Browsersync][7] | Your indispensable test assistant
+- [Project structure][8] | Create important files and folders
+- [> PART 2 - Project Settings][9]
 ---
 > *Now with [cat][1] experts
 >
@@ -24,5 +25,6 @@ application
 [4]: https://github.com/atre/javascript-developer-starter/tree/project-setup/webpack
 [5]: https://github.com/atre/javascript-developer-starter/tree/project-setup/babel
 [6]: https://github.com/atre/javascript-developer-starter/tree/project-setup/eslint
-[7]: https://github.com/atre/javascript-developer-starter/tree/project-setup/project-structure
-[8]: https://github.com/atre/javascript-developer-starter/tree/project-settings/index
+[7]: https://github.com/atre/javascript-developer-starter/tree/project-setup/browsersync
+[8]: https://github.com/atre/javascript-developer-starter/tree/project-setup/project-structure
+[9]: https://github.com/atre/javascript-developer-starter/tree/project-settings/index
