@@ -1,0 +1,9 @@
+{
+  "name": "javascript-developer-starter",
+  "version": "0.1.0",
+  "description": "Simple step-by-step guide to learn modern javascript and bootstrap your application",
+  "main": "index.js",
+  "repository": "https://github.com/atre/javascript-developer-starter.git",
+  "author": "Nikita Geraschenko <mo0surf@gmail.com>",
+  "license": "MIT"
+}
