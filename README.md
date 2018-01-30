@@ -1,40 +1,58 @@
 [< prev][1] | [index][2] > [project-setup][3]
 
 ## \> javascript-developer-starter _
-### 0.1.5 ⋅ ESlint
->Use style guidelines
+### 0.1.6 ⋅ Folder Structure
+>Create basic environment
 >
-Linters are your helpers to keep code base clean without any quite actions
-from you
->*Code linting is a type of static analysis that is frequently used to find
-problematic patterns or code that doesn't adhere to certain style guidelines.*
+Let's create a common for many developers file structure
+```
+|-- src
+|-- dist
+|-- index.html
+```
 
-Let's first install [ESlint][5] and a popular code style guideline -
-[airbnb][6]
+> `src` is for your `s`ou`rc`e code
+>
+> `dist` for Webpack to store compiled modules there
+>
+> and we will keep `index.html` in a project root as a basic static file
 
-Also we need manually install some dependencies `eslint-plugin-jsx-a11y`,
-`eslint-plugin-react` and `eslint-plugin-import`
 ```bash
-yarn add -D eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-import
+mkdir src dist && touch index.html
 ```
->**"(=^-ω-^=)"** - *"Now we need a `config`, right?"*
-
-Yes, now we need a simple config in a project root directory - `.eslintrc`
-```json
-{
-  "extends": "airbnb"
-}
+And we are finishing with updating our index file with the basic [HTML 5][5]
+template
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>javascript_developer_starter</title>
+</head>
+<body>
+</body>
+</html>
 ```
-
 ---
-[> next][4]
+> Related links:
+>
+>[HTML5 @ developer.mozilla.org][6]
+>
+>[Anatomy of a JavaScript/Node project gist][7]
+---
 
-> **"(*^ω^*)"** - *"Can't wait, can't wait. Let's setup now!"*
+> **"(´; ω ;｀)"** - *"So... It's over and time to say goodbye?"*
+### This is the end of `project-setup` module.
+#### Now we going to setup all installed components in the second part - `project-settings`
+[> PART 2 - Project Settings][4]
+
+> *"Can't wait, can't wait. Click it! Let's setup now!"* - **"(*^ω^*)"**
 
 [1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/babel
 [2]: https://github.com/Atre/javascript-developer-starter
 [3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
-[4]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/project-structure
+[4]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/index
 
-[5]: https://eslint.org
-[6]: https://github.com/airbnb/javascript
+[5]: https://css-tricks.com/snippets/html/html5-page-structure
+[6]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+[7]: https://gist.github.com/tracker1/59f2c13044315f88bee9
