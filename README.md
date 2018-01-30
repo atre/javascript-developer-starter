@@ -9,6 +9,7 @@ application
 - [0.1.1 - init][2] | Project creation with `yarn`
 - [0.1.2 - .editorconfig][3] | Keep your code style cool with `.editorconfig`
 - [0.1.3 - Webpack 4 beta][4] | Bundle ALL THE STUFF!
+- [0.1.4 - Babel 7 beta][5] | Use latest Javascript features now
 ---
 > *Now with [cat][1] experts
 >
@@ -18,3 +19,4 @@ application
 [2]: https://github.com/atre/javascript-developer-starter/tree/project-setup/init-yarn
 [3]: https://github.com/atre/javascript-developer-starter/tree/project-setup/editorconfig
 [4]: https://github.com/atre/javascript-developer-starter/tree/project-setup/webpack
+[5]: https://github.com/atre/javascript-developer-starter/tree/project-setup/babel
