@@ -51,7 +51,7 @@ template
 [1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/babel
 [2]: https://github.com/Atre/javascript-developer-starter
 [3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
-[4]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/index
+[4]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/babel-eslint
 
 [5]: https://css-tricks.com/snippets/html/html5-page-structure
 [6]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
