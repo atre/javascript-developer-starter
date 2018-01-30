@@ -1,4 +1,4 @@
-[< prev][1] | [index][2] > [project-setup][1]
+[< prev][1] | [index][2] > [project-setup][3]
 
 ## \> javascript-developer-starter _
 ### 0.1.2 ⋅ .editorconfig
@@ -14,7 +14,7 @@ work nicely with version control systems.*
 So by adding `.editorconfig` to the project root we can keep our codebase
 in one code style
 
-- From now on we will use a code style [recommended by airbnb][4]
+- From now on we will use a code style [recommended by airbnb][5]
 
 https://github.com/airbnb/javascript/blob/master/.editorconfig
 ```
@@ -35,16 +35,18 @@ max_line_length = null
 ---
 > Related links:
 >
->[editorconfig.org][5]
+>[editorconfig.org][6]
 >
->[airbnb/javascript][4]
+>[airbnb/javascript][5]
 ---
-[> next][3]
+[> next][4]
 
 > **"(=;ェ;=)"** - *"Always use two spaces MEOW"*
 
 [1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/init-yarn
-[2]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
-[3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/webpack
-[4]: https://github.com/airbnb/javascript
-[5]: http://editorconfig.org
+[2]: https://github.com/Atre/javascript-developer-starter
+[3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
+[4]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/webpack
+
+[5]: https://github.com/airbnb/javascript
+[6]: http://editorconfig.org
