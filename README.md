@@ -1,7 +1,7 @@
 [< prev][1] | [index][2] > [project-setup][3]
 
 ## \> javascript-developer-starter _
-### 0.1.6 ⋅ Folder Structure
+### Folder Structure
 >Create basic environment
 >
 Let's create a common for many developers file structure
