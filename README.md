@@ -29,7 +29,7 @@ Yes, now we need a simple config in a project root directory - `.eslintrc`
 ---
 [> next][4]
 
-> **"(*^ω^*)"** - *"Can't wait, can't wait. Let's setup now!"*
+> *"My code is shining now WOW"* - **"((≡^⚲͜^≡))"**
 
 [1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/babel
 [2]: https://github.com/Atre/javascript-developer-starter
