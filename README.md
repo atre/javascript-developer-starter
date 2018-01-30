@@ -1,22 +1,38 @@
+[< prev][1] | [index][2] > [project-setup][3]
+
 ## \> javascript-developer-starter _
-
-### Project Setup
->Simple step-by-step guide to learn modern javascript and bootstrap your
-application
-
-**⚠ Project is on early development stage, not for public ⚠**
-
-- [0.1.1 - init][2] | Project creation with `yarn`
-- [0.1.2 - .editorconfig][3] | Keep your code style cool with `.editorconfig`
-- [0.1.3 - Webpack 4 beta][4] | Bundle ALL THE STUFF!
-- [0.1.4 - Babel 7 beta][5] | Use latest Javascript features now
----
-> *Now with [cat][1] experts
+### 0.1.4 ⋅ Babel 7 Beta
+>Use latest Javascript features now
 >
-> "｡＾･ｪ･＾｡" - *"Javascript is so fluffy MEOW"*
+We want to use new **shiny** javascript features. And we can't wait for
+these guys making their decisions. We want it **NOW**!
 
-[1]: https://github.com/melaniecebula/cat-ascii-faces
-[2]: https://github.com/atre/javascript-developer-starter/tree/project-setup/init-yarn
-[3]: https://github.com/atre/javascript-developer-starter/tree/project-setup/editorconfig
-[4]: https://github.com/atre/javascript-developer-starter/tree/project-setup/webpack
-[5]: https://github.com/atre/javascript-developer-starter/tree/project-setup/babel
+So let's add a **compiler for our assets** - [Babel][5]
+
+Like with webpack - we will use `next` version of the package - [Babel 7 beta][6]
+
+Installing `babel core` and `env preset`
+```bash
+yarn add -D @babel/core @babel/preset-env
+```
+
+And we need a simple `.babelrc` config in our project root
+
+> **"(ㅇㅅㅇ❀)"** - *"Let's keep it simple for now"*
+```json
+{
+    "presets": ["@babel/preset-env"]
+}
+```
+---
+[> next][4]
+
+> **"(=｀ェ´=)"** - *"New Javascript features are **MUST-TO-USE**"*
+
+[1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/webpack
+[2]: https://github.com/Atre/javascript-developer-starter
+[3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
+[4]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/eslint
+
+[5]: https://babeljs.io
+[6]: https://babeljs.io/blog/2017/12/27/nearing-the-7.0-release
