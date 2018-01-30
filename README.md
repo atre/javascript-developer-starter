@@ -16,7 +16,7 @@ Let's just install it for now. We will setup it a bit later
 ```bash
 yarn add -D browser-sync
 ```
->**(=^･ω･^)** - *"I can't understand anything but shit is so cool!"*
+>**(=^･ω･^)** - *"I can't understand anything but this is so cool!"*
 ---
 [> next][4]
 
