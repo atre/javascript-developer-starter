@@ -1,58 +1,35 @@
-[< prev][1] | [index][2] > [project-setup][3]
+[< prev][1] | [index][2] > [project-settings][1]
 
 ## \> javascript-developer-starter _
-### 0.1.6 ⋅ Folder Structure
->Create basic environment
->
-Let's create a common for many developers file structure
-```
-|-- src
-|-- dist
-|-- index.html
-```
+### 0.2.1 ⋅ ESlint to work wirh Babel
+>Simple steps to setup our linter
 
-> `src` is for your `s`ou`rc`e code
->
-> `dist` for Webpack to store compiled modules there
->
-> and we will keep `index.html` in a project root as a basic static file
-
+In this step we need only to download `babel-eslint` plugin for `ESlint`
+and set it in a config file
 ```bash
-mkdir src dist && touch index.html
+yarn add -D babel-eslint
 ```
-And we are finishing with updating our index file with the basic [HTML 5][5]
-template
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>javascript_developer_starter</title>
-</head>
-<body>
-</body>
-</html>
+And then just change content of our `.eslintrc` to
+```json
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb"
+}
 ```
+So actually we now parsing with `babel` rules and additionally applying `airbnb` settings
+
 ---
 > Related links:
 >
->[HTML5 @ developer.mozilla.org][6]
->
->[Anatomy of a JavaScript/Node project gist][7]
+>[ESLint using Babel as the parser.][5]
 ---
+[> next][4]
 
-> **"(´; ω ;｀)"** - *"So... It's over and time to say goodbye?"*
-### This is the end of `project-setup` module.
-#### Now we going to setup all installed components in the second part - `project-settings`
-[> PART 2 - Project Settings][4]
-
-> *"Can't wait, can't wait. Click it! Let's setup now!"* - **"(*^ω^*)"**
+>**(⁎˃ᆺ˂)** - *"Done! Is it done?"*
 
 [1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/babel
 [2]: https://github.com/Atre/javascript-developer-starter
 [3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
 [4]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/index
 
-[5]: https://css-tricks.com/snippets/html/html5-page-structure
-[6]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
-[7]: https://gist.github.com/tracker1/59f2c13044315f88bee9
+[5]: https://github.com/babel/babel-eslint
