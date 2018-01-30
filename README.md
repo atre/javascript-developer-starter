@@ -1,20 +1,74 @@
+[< prev][1] | [index][2] > [project-settings][3]
+
 ## \> javascript-developer-starter _
+### 0.2.2 ⋅ Setup Webpack
+>MEOW
 
-### Project Settings
->Simple step-by-step guide to learn modern javascript and bootstrap your
-application
+To properly setup webpack we need some additional libraries
 
-**⚠ Project is on early development stage, not for public ⚠**
-
-- [0.2.1 - ESlint to work with Babel][2] | We need ESlint to know about Babel rules
-- [0.2.2 - Setup Webpack][3] | Looks like most difficult step but NO
-- [0.2.3 - Let's try][4] | *Like a charm*
----
-> *Now with [cat][1] experts
+> [browser-sync-webpack-plugin][5] so webpack can render through browsersync
 >
-> **(=^ ◡ ^=)** - *"Stay in the flow MEOW"*
+> [babel-loader][6] allows transpiling JavaScript files using Babel and webpack
+```bash
+yarn add -D browser-sync-webpack-plugin babel-loader
+```
+Now let's edit `./config/webpack.config.js`
+```javascript
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-[1]: https://github.com/melaniecebula/cat-ascii-faces
-[2]: https://github.com/atre/javascript-developer-starter/tree/project-settings/babel-eslint
-[3]: https://github.com/atre/javascript-developer-starter/tree/project-settings/set-webpack
-[4]: https://github.com/atre/javascript-developer-starter/tree/project-settings/lets-try
+module.exports = {
+  plugins: [
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      server: { baseDir: ['.'] },
+      plugins: ['bs-fullscreen-message'],
+      files: [
+        './index.html',
+      ],
+    }),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+    ],
+  },
+};
+```
+>**(=^･ｪ･^=)** - *"That's it? Not scary at ALL!"*
+
+A bit more details:
+> `server: { baseDir: ['.'] }` - with `.` we just telling browsersync to
+look for files in a project root (where we have our `index.html`)
+>
+> `files: ['./index.html']` with this option browsersync will 🔥 auto reload
+your current bundle on `index.html` file changes
+>
+> `loader: 'babel-loader'` here we switching asset pipe to a babel (controlled
+from `.babelrc`)
+
+---
+> Related links:
+>
+>[Current webpach configuration guide][7]
+---
+So it's time to test all this stuff
+
+[> next][4]
+
+>**(=；ェ；=)** - *"(heavy breathing)"*
+
+[1]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/babel-eslint
+[2]: https://github.com/Atre/javascript-developer-starter
+[3]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/index
+[4]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/lets-try
+
+[5]: https://github.com/Va1/browser-sync-webpack-plugin
+[6]: https://github.com/babel/babel-loader
+[7]: https://webpack.js.org/configuration
