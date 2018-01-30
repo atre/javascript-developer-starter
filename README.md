@@ -1,7 +1,7 @@
 [< prev][1] | [index][2] > [project-setup][1]
 
-#### \> javascript-developer-starter
-#### 0.1.1 ⋅ Init
+## \> javascript-developer-starter
+### 0.1.1 ⋅ Init
 >Project initialization with `yarn`
 
 So we starting our project with basic
