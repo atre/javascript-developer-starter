@@ -1,47 +1,38 @@
 [< prev][1] | [index][2] > [project-setup][3]
 
 ## \> javascript-developer-starter _
-### 0.1.3 ⋅ Webpack 4 Beta
->Bundle **ALL THE STUFF!**
+### 0.1.4 ⋅ Babel 7 Beta
+>Use latest Javascript features now
 >
-Now we need an application bundler - the `pain and suffering` of
-today's web development
-> **"(=ｘェｘ=)"** - *"Webpack?!"*
+We want to use new **shiny** javascript features. And we can't wait for
+these guys making their decisions. We want it **NOW**!
 
-We will stick up to a common [Webpack][5] but with new 4 version
+So let's add a **compiler for our assets** - [Babel][5]
 
-- Webpack 4 is currently in beta so we need to set `@next` during installation
-- Using `--dev` or `-D` will install one or more packages in your devDependencies
+Like with webpack - we will use `next` version of the package - [Babel 7 beta][6]
+
+Installing `babel core` and `env preset`
 ```bash
-yarn add -D webpack@next webpack-cli
+yarn add -D @babel/core @babel/preset-env
 ```
 
-Now we need a config file for webpack. Let's create a `config` folder at
-the project root and place a `webpack.config.js` inside it
+And we need a simple `.babelrc` config in our project root
 
-- `$_` returns the last argument of the previously executed
-
-```bash
-mkdir config && touch $_/webpack.config.js
+> **"(ㅇㅅㅇ❀)"** - *"Let's keep it simple for now"*
+```json
+{
+    "presets": ["@babel/preset-env"]
+}
 ```
-Let's keep it empty for now
-
----
-> Related links:
->
->[webpack 4 beta — try it today @ medium.com][6]
->
->[Bash Special Parameters Explained][7]
 ---
 [> next][4]
 
-> **"(=①ω①=)"** - *"Don't forget to update your `.gitignore`"*
+> **"(=｀ェ´=)"** - *"New Javascript features are **MUST-TO-USE**"*
 
-[1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/editorconfig
+[1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/webpack
 [2]: https://github.com/Atre/javascript-developer-starter
 [3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
-[4]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/babel
+[4]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/eslint
 
-[5]: https://webpack.js.org
-[6]: https://medium.com/webpack/webpack-4-beta-try-it-today-6b1d27d7d7e2
-[7]: https://www.thegeekstuff.com/2010/05/bash-shell-special-parameters
+[5]: https://babeljs.io
+[6]: https://babeljs.io/blog/2017/12/27/nearing-the-7.0-release
