@@ -6,7 +6,9 @@
 >
 Now we need an application bundler - the `pain and suffering` of
 today's web development
-> **"(=ｘェｘ=)"** - *"Webpack?!"*
+> **"(=｀ω´=)"** - *"New Webpack beta!"*
+>
+>*"Oh no!"* - **"(=ｘェｘ=)"**
 
 We will stick up to a common [Webpack][5] but with new 4 version
 
