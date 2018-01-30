@@ -12,9 +12,12 @@ Browsersync cuts out repetitive manual tasks. It’s like an extra pair of hands
 Customise an array of sync settings from the UI or command line to create a
 personalised test environment. Need more control? Browsersync is easily integrated with your web platform, build tools, and other Node.js projects.*
 
-Let's just install it for now. We will setup it a bit later
+Let's just install it for now. And add a [bs-fullscreen-message][6] plugin -
+it's *useful for showing errors from webpack*
+
+We will setup it a bit later with webpack
 ```bash
-yarn add -D browser-sync
+yarn add -D browser-sync bs-fullscreen-message
 ```
 >**(=^･ω･^)** - *"I can't understand anything but this is so cool!"*
 ---
@@ -28,3 +31,4 @@ yarn add -D browser-sync
 [4]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/project-structure
 
 [5]: https://browsersync.io
+[6]: https://www.npmjs.com/package/bs-fullscreen-message
