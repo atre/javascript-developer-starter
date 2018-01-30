@@ -1,28 +1,50 @@
 [< prev][1] | [index][2] > [project-setup][1]
 
-#### \> javascript-developer-starter
-#### 0.1.1 ⋅ Init
->Project initialization with `yarn`
+## \> javascript-developer-starter _
+### 0.1.2 ⋅ .editorconfig
+>Keeping your **code style** cool
+>
+>*EditorConfig helps developers define and maintain consistent coding
+styles between different editors and IDEs. The EditorConfig project
+consists of a file format for defining coding styles and a collection
+of text editor plugins that enable editors to read the file format and
+adhere to defined styles. EditorConfig files are easily readable and they
+work nicely with version control systems.*
 
-So we starting our project with basic
-```bash
-yarn init
+So by adding `.editorconfig` to the project root we can keep our codebase
+in one code style
+
+- From now on we will use a code style [recommended by airbnb][4]
+
+https://github.com/airbnb/javascript/blob/master/.editorconfig
 ```
-- recommended `semver` starting version is `0.1.0`
+root = true
 
+[*]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+end_of_line = lf
+# editorconfig-tools is unable to ignore longs strings or urls
+max_line_length = null
+```
+>https://gist.github.com/atre/a5492a04393dbbfaab64d233bfa36e09
+
+---
 > Related links:
 >
->[Yarn][4] | Fast, reliable, and secure dependency management
+>[editorconfig.org][5]
 >
->[Semver][5] | Semantic Versioning 2.0.0
-
+>[airbnb/javascript][4]
 ---
 [> next][3]
 
-> **"(^._.^)ﾉ"** - *"Yarn is really fast MEOW"*
+> **"(=;ェ;=)"** - *"Always use two spaces MEOW"*
 
-[1]: https://github.com/Atre/javascript-developer-startertr/project-setup/index
-[2]: https://github.com/Atre/javascript-developer-starter
-[3]: https://github.com/Atre/javascript-developer-startertr/tree/project-setup/editorconfig
-[4]: https://yarnpkg.com
-[5]: https://semver.org
+[1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/init-yarn
+[2]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
+[3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/webpack
+[4]: https://github.com/airbnb/javascript
+[5]: http://editorconfig.org
