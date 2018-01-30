@@ -34,7 +34,7 @@ Yes, now we need a simple config in a project root directory - `.eslintrc`
 [1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/babel
 [2]: https://github.com/Atre/javascript-developer-starter
 [3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
-[4]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/project-structure
+[4]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/browsersync
 
 [5]: https://eslint.org
 [6]: https://github.com/airbnb/javascript
