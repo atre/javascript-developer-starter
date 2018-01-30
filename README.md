@@ -1,74 +1,52 @@
 [< prev][1] | [index][2] > [project-settings][3]
 
 ## \> javascript-developer-starter _
-### 0.2.2 ⋅ Setup Webpack
->MEOW
+### 0.2.3 ⋅ Let's try
+> Last preparations for a `first run`
 
-To properly setup webpack we need some additional libraries
-
-> [browser-sync-webpack-plugin][5] so webpack can render through browsersync
->
-> [babel-loader][6] allows transpiling JavaScript files using Babel and webpack
+First we need a javascript file to run. Let's create one in our `source code`
+folder
 ```bash
-yarn add -D browser-sync-webpack-plugin babel-loader
+touch src/index.js
 ```
-Now let's edit `./config/webpack.config.js`
+And fill it with some testing data
 ```javascript
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-
-module.exports = {
-  plugins: [
-    new BrowserSyncPlugin({
-      host: 'localhost',
-      port: 3000,
-      server: { baseDir: ['.'] },
-      plugins: ['bs-fullscreen-message'],
-      files: [
-        './index.html',
-      ],
-    }),
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-    ],
-  },
-};
+setInterval(() => console.count('hey!'), 1000);
 ```
->**(=^･ｪ･^=)** - *"That's it? Not scary at ALL!"*
+Now we need to load `bundled js` in our `index.html`
+- by default webpack creating bundle in `dist/main.js`
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>javascript_developer_starter</title>
+</head>
+<body>
+<script async src="dist/main.js"></script>
+</body>
+</html>
+```
+And last step is to update **script** section in `package.json`. Add this
+after `devDependencies` block
 
-A bit more details:
-> `server: { baseDir: ['.'] }` - with `.` we just telling browsersync to
-look for files in a project root (where we have our `index.html`)
->
-> `files: ['./index.html']` with this option browsersync will 🔥 auto reload
-your current bundle on `index.html` file changes
->
-> `loader: 'babel-loader'` here we switching asset pipe to a babel (controlled
-from `.babelrc`)
+```json
+"scripts": {
+    "dev": "webpack --mode development --config config -w --progress --color"
+  }
+```
+This should run our development environment by a ``yarn dev`` command
 
----
-> Related links:
->
->[Current webpach configuration guide][7]
----
-So it's time to test all this stuff
+Try it out!
+> **(ノω<。)** - *"I can't look!!1"*
 
-[> next][4]
+Look MOM, all works!
 
->**(=；ェ；=)** - *"(heavy breathing)"*
+Browser should open automatically on [http://localhost:3000](http://localhost:3000)
+with browsersync
 
-[1]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/babel-eslint
-[2]: https://github.com/Atre/javascript-developer-starter
-[3]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/index
-[4]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/lets-try
+Visit [http://localhost:3001][http://localhost:3001] for a browsersync settings
 
-[5]: https://github.com/Va1/browser-sync-webpack-plugin
-[6]: https://github.com/babel/babel-loader
-[7]: https://webpack.js.org/configuration
+>![Alt Text](https://i.imgur.com/L02tXj8.gif)
+
+>**\__(=；ェ；=)\\(*^ω^*)__** **YEAAAAAAHHHH!!** **(・∀・)**
