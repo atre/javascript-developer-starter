@@ -1,50 +1,47 @@
-[< prev][1] | [index][2] > [project-setup][1]
+[< prev][1] | [index][2] > [project-setup][3]
 
 ## \> javascript-developer-starter _
-### 0.1.2 ⋅ .editorconfig
->Keeping your **code style** cool
+### 0.1.3 ⋅ Webpack 4 Beta
+>Bundle **ALL THE STUFF!**
 >
->*EditorConfig helps developers define and maintain consistent coding
-styles between different editors and IDEs. The EditorConfig project
-consists of a file format for defining coding styles and a collection
-of text editor plugins that enable editors to read the file format and
-adhere to defined styles. EditorConfig files are easily readable and they
-work nicely with version control systems.*
+Now we need an application bundler - the `pain and suffering` of
+today's web development
+> **"(=ｘェｘ=)"** - *"Webpack?!"*
 
-So by adding `.editorconfig` to the project root we can keep our codebase
-in one code style
+We will stick up to a common [Webpack][5] but with new 4 version
 
-- From now on we will use a code style [recommended by airbnb][4]
-
-https://github.com/airbnb/javascript/blob/master/.editorconfig
+- Webpack 4 is currently in beta so we need to set `@next` during installation
+- Using `--dev` or `-D` will install one or more packages in your devDependencies
+```bash
+yarn add -D webpack@next webpack-cli
 ```
-root = true
 
-[*]
-indent_style = space
-indent_size = 2
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-end_of_line = lf
-# editorconfig-tools is unable to ignore longs strings or urls
-max_line_length = null
+Now we need a config file for webpack. Let's create a `config` folder at
+the project root and place a `webpack.config.js` inside it
+
+- `$_` returns the last argument of the previously executed
+
+```bash
+mkdir config && touch $_/webpack.config.js
 ```
->https://gist.github.com/atre/a5492a04393dbbfaab64d233bfa36e09
+Let's keep it empty for now
 
 ---
 > Related links:
 >
->[editorconfig.org][5]
+>[webpack 4 beta — try it today @ medium.com][6]
 >
->[airbnb/javascript][4]
+>[Bash Special Parameters Explained][7]
 ---
-[> next][3]
+[> next][4]
 
-> **"(=;ェ;=)"** - *"Always use two spaces MEOW"*
+> **"(=①ω①=)"** - *"Don't forget to update your `.gitignore`"*
 
-[1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/init-yarn
-[2]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
-[3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/webpack
-[4]: https://github.com/airbnb/javascript
-[5]: http://editorconfig.org
+[1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/editorconfig
+[2]: https://github.com/Atre/javascript-developer-starter
+[3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
+[4]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/babel
+
+[5]: https://webpack.js.org
+[6]: https://medium.com/webpack/webpack-4-beta-try-it-today-6b1d27d7d7e2
+[7]: https://www.thegeekstuff.com/2010/05/bash-shell-special-parameters
