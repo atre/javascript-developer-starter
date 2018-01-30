@@ -21,15 +21,13 @@ So actually we now parsing with `babel` rules and additionally applying `airbnb`
 ---
 > Related links:
 >
->[ESLint using Babel as the parser.][5]
+>[ESLint using Babel as the parser.][4]
 ---
-[> next][4]
+[> next][3]
 
 >**(⁎˃ᆺ˂)** - *"Done! Is it done?"*
 
-[1]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/babel
+[1]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/index
 [2]: https://github.com/Atre/javascript-developer-starter
-[3]: https://github.com/Atre/javascript-developer-starter/tree/project-setup/index
-[4]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/index
-
-[5]: https://github.com/babel/babel-eslint
+[3]: https://github.com/Atre/javascript-developer-starter/tree/project-settings/set-webpack
+[4]: https://github.com/babel/babel-eslint
