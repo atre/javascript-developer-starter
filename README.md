@@ -8,6 +8,7 @@ application
 
 - [0.1.1 - init][2] | Project creation with `yarn`
 - [0.1.2 - .editorconfig][3] | Keep your code style cool with `.editorconfig`
+- [0.1.3 - Webpack 4 beta][4] | Bundle ALL THE STUFF!
 ---
 > *Now with [cat][1] experts
 >
@@ -16,3 +17,4 @@ application
 [1]: https://github.com/melaniecebula/cat-ascii-faces
 [2]: https://github.com/atre/javascript-developer-starter/tree/project-setup/init-yarn
 [3]: https://github.com/atre/javascript-developer-starter/tree/project-setup/editorconfig
+[4]: https://github.com/atre/javascript-developer-starter/tree/project-setup/webpack
