@@ -1,18 +1,28 @@
-#### \> javascript-developer-starter/ _
+[< prev][1] | [index][2] > [project-setup][1]
 
->##### Project Setup
+#### \> javascript-developer-starter
+#### 0.1.1 ⋅ Init
+>Project initialization with `yarn`
+
+So we starting our project with basic
+```bash
+yarn init
+```
+- recommended `semver` starting version is `0.1.0`
+
+> Related links:
 >
->Simple step-by-step guide to learn modern javascript and bootstrap your
-application
+>[Yarn][4] | Fast, reliable, and secure dependency management
 >
->   "｡＾･ｪ･＾｡"
->
-> *Now with [cats][1]
+>[Semver][5] | Semantic Versioning 2.0.0
+
 ---
+[> next][3]
 
-**⚠ Project is on early development stage, not for public ⚠**
+> **"(^._.^)ﾉ"** - *"Yarn is really fast MEOW"*
 
-1. [init](https://github.com/atre/javascript-developer-starter/tree/project-setup/yarn-init)
-| Project creation with `yarn`
-
-[1]: https://github.com/melaniecebula/cat-ascii-faces
+[1]: https://github.com/Atre/javascript-developer-startertr/project-setup/index
+[2]: https://github.com/Atre/javascript-developer-starter
+[3]: https://github.com/Atre/javascript-developer-startertr/tree/project-setup/editorconfig
+[4]: https://yarnpkg.com
+[5]: https://semver.org
